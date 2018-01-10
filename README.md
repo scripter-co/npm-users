@@ -1,6 +1,7 @@
-# nusrm
+# nusrm
+npm user manager
 
-NPM user manager
+-----------
 
 ## Installation
 
@@ -8,7 +9,9 @@ NPM user manager
 npm i nusrm -g
 ```
 
-## Use
+-----------
+
+## Use
 
 ```bash
 Usage: nusrm [options]
