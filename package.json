@@ -1,14 +1,17 @@
 {
-  "name": "nusrm",
+  "name": "npm-users",
   "version": "1.0.1",
   "description": "npm user manager",
   "main": "index.js",
   "scripts": {
-    "test": "npm t",
     "lint": "eslint ."
   },
   "bin": {
-    "nusrm": "./index.js"
+    "npm-users": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scripter-co/npm-users.git"
   },
   "author": "Nathan Mahdavi",
   "license": "ISC",
