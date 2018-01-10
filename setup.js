@@ -11,4 +11,4 @@ function setupHomeDirectory() {
 
 module.exports = () => {
   setupHomeDirectory();
-}
+};

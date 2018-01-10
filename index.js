@@ -52,7 +52,7 @@ if (program.list) {
 }
 
 if (program.whoami) {
-  spawnSync('npm', ['whoami'], { stdio: 'inherit' })
+  spawnSync('npm', ['whoami'], { stdio: 'inherit' });
 
   process.exit();
 }

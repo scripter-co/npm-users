@@ -8,4 +8,4 @@ module.exports = {
   getHomeDirectory: () => userHomeDirectory,
   getNusrmHomeDirectory: () => nusrmRootDirectory,
   getNpmRc: () => npmRc
-}
+};
