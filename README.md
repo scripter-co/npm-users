@@ -1,4 +1,4 @@
-# nusrm
+# npm-users
 npm user manager
 
 -----------
@@ -6,7 +6,7 @@ npm user manager
 ## Installation
 
 ```javascript
-npm i nusrm -g
+npm i npm-users -g
 ```
 
 -----------
@@ -14,7 +14,7 @@ npm i nusrm -g
 ## Use
 
 ```bash
-Usage: nusrm [options]
+Usage: npm-users [options]
 
 
 Options:

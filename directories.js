@@ -1,11 +1,10 @@
 const os = require('os');
 
 const userHomeDirectory = os.homedir();
-const nusrmRootDirectory = `${userHomeDirectory}/.nusrm`;
+const npmUsersRootDirectory = `${userHomeDirectory}/.npm-users`;
 const npmRc = `${userHomeDirectory}/.npmrc`;
 
 module.exports = {
-  getHomeDirectory: () => userHomeDirectory,
-  getNusrmHomeDirectory: () => nusrmRootDirectory,
+  getNpmUsersHomeDirectory: () => npmUsersRootDirectory,
   getNpmRc: () => npmRc
 };

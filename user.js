@@ -5,7 +5,7 @@ const log = console.log;
 const exit = (code = 0) => process.exit(code);
 
 function validateUserExists(username) {
-  const targetUserFile = `${directories.getNusrmHomeDirectory()}/${username}`;
+  const targetUserFile = `${directories.getNpmUsersHomeDirectory()}/${username}`;
   const userNotFound = !fs.existsSync(targetUserFile);
   if (userNotFound) {
     log('The specified user could not be found.');
@@ -17,7 +17,7 @@ function validateUserExists(username) {
 function remove(username) {
   validateUserExists(username);
 
-  const targetUserFile = `${directories.getNusrmHomeDirectory()}/${username}`;
+  const targetUserFile = `${directories.getNpmUsersHomeDirectory()}/${username}`;
 
   fs.unlink(targetUserFile);
 
@@ -27,7 +27,7 @@ function remove(username) {
 function use(username) {
   validateUserExists(username);
 
-  const targetUserFile = `${directories.getNusrmHomeDirectory()}/${username}`;
+  const targetUserFile = `${directories.getNpmUsersHomeDirectory()}/${username}`;
   const npmRcFileExists = fs.existsSync(directories.getNpmRc());
   if (npmRcFileExists) {
     fs.unlink(directories.getNpmRc());
