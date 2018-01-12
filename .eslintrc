@@ -6,8 +6,12 @@
   },
   "env": {
     "node": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "ecmaVersion": 6
-  }
+  },
+  "plugins": [
+    "jest"
+  ]
 }
