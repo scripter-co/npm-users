@@ -1,14 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const { spawnSync } = require('child_process');
 const fs = require('fs');
-
-const { version } = require('./package');
-const directories = require('./directories');
-const user = require('./user');
-const log = console.log;
-const exit = (code = 0) => process.exit(code);
 
 require('./setup')();
 

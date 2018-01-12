@@ -2,7 +2,8 @@
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
-    "no-undef": "error"
+    "no-undef": "error",
+    "no-unused-vars": "error"
   },
   "env": {
     "node": true,
