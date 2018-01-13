@@ -11,6 +11,7 @@ dist: trusty
 
 jobs:
   include:
-  - script: npm run lint
   - script:
+    - npm run lint
     - npm run test:prod
+    - npm run coverage

@@ -1,6 +1,6 @@
 # npm user manager
 
-[![Travis](https://img.shields.io/travis/scripter-co/npm-users.svg)](https://travis-ci.org/scripter-co/npm-users) [![npm](https://img.shields.io/npm/v/npm-users.svg)](https://www.npmjs.com/package/npm-users)
+[![Travis](https://img.shields.io/travis/scripter-co/npm-users.svg)](https://travis-ci.org/scripter-co/npm-users) [![Codecov](https://img.shields.io/codecov/c/github/scripter-co/npm-users.svg)]() [![npm](https://img.shields.io/npm/v/npm-users.svg)](https://www.npmjs.com/package/npm-users)
 
 
 ## Installation
