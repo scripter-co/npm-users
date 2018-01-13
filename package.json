@@ -4,6 +4,7 @@
   "description": "npm user manager",
   "main": "index.js",
   "scripts": {
+    "test": "jest --watch",
     "lint": "eslint ."
   },
   "bin": {

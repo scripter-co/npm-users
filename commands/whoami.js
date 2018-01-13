@@ -1,7 +1,5 @@
-const { spawnSync } = require('child_process');
+const child_process = require('child_process');
 
 module.exports = () => {
-  spawnSync('npm', ['whoami'], { stdio: 'inherit' });
-
-  process.exit();
+  child_process.spawnSync('npm', ['whoami'], { stdio: 'inherit' });
 };

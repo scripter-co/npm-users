@@ -1,7 +1,14 @@
-const user = require('../user');
+const directories = require('../directories');
+const fs = require('fs');
 
-module.exports = (username) => {
-  user.remove(username);
+module.exports = (alias) => {
+  const targetUserFile = directories.getNpmUsersHomeDirectory() + alias;
+  const userNotFound = !fs.existsSync(targetUserFile);
+  if (userNotFound) {
+    throw new Error('The specified user could not be found.');
+  }
 
-  process.exit();
+  fs.unlinkSync(targetUserFile);
+
+  console.log(`Removed user ${alias}`);
 };
