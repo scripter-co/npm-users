@@ -9,8 +9,8 @@ module.exports = (alias) => {
     throw new Error('This user already exists. Use `npm-users list` and `npm-users remove <alias>` to resolve.');
   }
 
-  const loginProcess = child_process.spawnSync('npm', ['login'], { stdio: 'inherit' });
-  if (loginProcess.status !== 0) {
+  const { status: loginStatusCode } = child_process.spawnSync('npm', ['login'], { stdio: 'inherit' });
+  if (loginStatusCode !== 0) {
     throw new Error('We were unable to add this login.');
   }
 
