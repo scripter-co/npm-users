@@ -3,7 +3,7 @@ const fs = require('fs');
 const directories = require('../../directories');
 const remove = require('../../commands/remove');
 
-describe('Command: remove <alias>', function () {
+describe('Command: remove <alias>', () => {
 
   const mockAlias = 'test-alias';
   const mockNpmUserBasePath = '/mock/npm/user/';

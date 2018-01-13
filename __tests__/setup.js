@@ -17,7 +17,7 @@ describe('setup()', () => {
     jest.restoreAllMocks();
   });
 
-  describe('setupHomeDirectory()', function () {
+  describe('setupHomeDirectory()', () => {
 
     test('creates the npm user directory if it does not exist', () => {
       setup();

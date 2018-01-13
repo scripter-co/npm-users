@@ -3,7 +3,7 @@ const fs = require('fs');
 const list = require('../../commands/list');
 const directories = require('../../directories');
 
-describe('Command: list', function () {
+describe('Command: list', () => {
 
   const mockNpmUserBasePath = '/mock/npm/user/';
   const mockAliases = [
@@ -21,7 +21,7 @@ describe('Command: list', function () {
     jest.restoreAllMocks();
   });
 
-  test('reads users from the correct directory', function () {
+  test('reads users from the correct directory', () => {
     list();
 
     expect(fs.readdirSync).toHaveBeenCalledWith(mockNpmUserBasePath);
