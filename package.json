@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch",
+    "test:prod": "jest",
     "lint": "eslint ."
   },
   "bin": {

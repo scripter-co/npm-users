@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+- '8'
+
+cache:
+  directories:
+  - node_modules
+
+dist: trusty
+
+jobs:
+  include:
+  - script: npm run lint
+  - script:
+    - npm run test:prod
