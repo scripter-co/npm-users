@@ -1,8 +1,9 @@
 const program = require('commander');
 const fs = require('fs');
+const path = require('path');
 
 function getMappedCommands() {
-  return fs.readdirSync('./commands').reduce((commands, command) => {
+  return fs.readdirSync(path.resolve(__dirname, './commands')).reduce((commands, command) => {
     const commandWithoutExtension = command.replace('.js', '');
 
     return Object.assign(commands, {
